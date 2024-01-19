@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:techstertask/controller/selectbutton_controller.dart';
 import 'package:techstertask/view/screen/Home/Home.dart';
+import 'package:techstertask/view/screen/splashscreen/splashscreen.dart';
 import 'package:techstertask/view/service/catogeryReport_service.dart';
 import 'package:techstertask/view/service/catogery_service.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: Scaffold(body: Homescreen()));
+          home: Scaffold(body: splashscreen()));
     });
   }
 }
