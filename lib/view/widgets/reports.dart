@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_brace_in_string_interps
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -41,12 +43,12 @@ Widget reports() {
                     decoration: BoxDecoration(
                         image: DecorationImage(
                             image: NetworkImage(
-                                '$baseurl${catogeryReport_controll.data[index]['image']}')),
+                                "${baseurl}${catogeryReport_controll.data[index]['image']}")),
                         borderRadius: BorderRadius.circular(3.h),
                         color: bl.withOpacity(0.2)),
                     child: CachedNetworkImage(
                       imageUrl:
-                          "$baseurl${catogeryReport_controll.data[index]['image']}",
+                          "$baseurl}${catogeryReport_controll.data[index]['image']}",
                       placeholder: (context, url) =>
                           const Center(child: CircularProgressIndicator()),
                       errorWidget: (context, url, error) => Icon(

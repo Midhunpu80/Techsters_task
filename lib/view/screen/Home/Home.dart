@@ -37,8 +37,8 @@ class Homescreen extends StatelessWidget {
                   height: 3.h,
                 ),
                 Obx(
-                  () => catogeryReport_controll.data.isEmpty
-                      ?  const  SizedBox()
+                  () => catogeryReport_controll.data.value.isEmpty
+                      ? Center(child: CircularProgressIndicator(),)
                       : Padding(
                           padding: EdgeInsets.only(left: 8.sp),
                           child: Align(
